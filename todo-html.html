@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css'  media="screen" href="todo.css"/>
+    <title>Todo List App</title>
+  </head>
+
+  <body>
+    <div class="abc">
+      <div class="navbar">
+        <div class="logo" id="logo1">
+          List.<span>It</span>
+        </div>
+      <nav>
+          <ul>                        
+              <button>Home</button>
+              <button>To - Do</button>
+              <!-- <button>About Us</button> -->
+          </ul>
+      </nav>
+      </div>
+      <div class="wrapper">
+          <header style="text-align: center; padding-bottom: 30px; font-size: 32px;"><b>To-do List</b></header>
+        <div class="task-input">
+          <ion-icon name="create-outline"></ion-icon>
+          <input type="text" placeholder="Add a New Task + Enter" />
+        </div>
+        <div class="controls">
+          
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+          
+          <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html

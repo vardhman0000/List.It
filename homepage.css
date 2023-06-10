@@ -1,0 +1,530 @@
+* {
+    font-family: 'Google Sans';
+}
+@font-face {
+    font-family: 'Google Sans';
+    src: url(ProductSans-Regular.ttf);
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    min-width: 364px;
+    margin: 0px;
+    /* position: relative; */
+}
+#sec1 {
+    height: 800px;
+    background-color: black;
+}
+
+#welcome {
+    font-size: 30px;
+    color: aliceblue;
+    font-family: Trebuchet MS;
+    white-space: nowrap;
+    overflow: hidden;
+    width: AUTO;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: .15em;
+    
+}
+
+#wel-text {
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-size: 55px;
+    width: 870px;
+    font-weight: lighter;
+    border-right: .1em solid orange;
+    animation : blink 0.75s infinite step-end,
+                typing 2.7s steps(40,end) forwards;
+}
+#task {
+    font-weight: bold;
+    color: rgb(240, 134, 77) ;
+}
+@keyframes blink {
+    from , to {border-color: transparent;}
+    50% {border-color: rgb(250, 226, 47);}
+}
+@keyframes typing {
+    from {width : 0}
+    to {width : 890px}
+}
+
+#logo {
+    font-size: 80px;
+    border: 2px black solid;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    margin: auto;
+    font-family: Trebuchet MS;
+    background-color: rgb(250, 226, 47);
+    font-weight: bold;
+    animation: float 0.8s infinite alternate-reverse;        
+}
+#logo span {
+    color: rgb(235, 95, 19);
+} 
+@keyframes float {
+    0% {transform: translateY(15px);}
+    100% {transform: translateY(-15px)}
+}
+
+
+
+/* .container {
+    width: 100%;
+    height: 100px;
+    min-height: 5vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    color: white;
+    position: absolute;
+    top: 980px;
+} */
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    margin-left: 0%;
+    left: 0px;
+    top: 0px;
+    z-index: 4;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px black;
+    visibility: hidden;
+}
+.logo {
+    scale: 0.8;
+    transition: scale 1s;
+    width: 80px;
+    cursor: pointer;
+    border: solid black 2px;
+    padding: 10px;
+    margin-left: 8%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(239, 212, 72);
+    word-spacing: 20px;
+    
+}
+.logo span,
+.footer-logo span {
+    color: rgb(235, 95, 19);
+}
+nav {
+    flex: 2;
+    text-align: right;
+}
+nav ul {
+    margin-right: 13%;
+}
+nav button {
+    display: inline-block;
+    border: solid transparent 2px;
+    margin-right: 40px;
+    scale: 1.0 ;
+    transition: scale 0.5s;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 22px;
+    height: 50px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+.img1, .img2, .img3 {
+    height: 250px;
+    padding: 10px;
+    transition: height 0.5s;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+.child1 {
+    display: flex;
+    flex-direction: row;
+    animation: ch1 3s ease-in 0s 1 normal forwards;
+}
+.child2 {
+    display: flex;
+    flex-direction: row;
+    animation: ch2 3s ease-in 2s 1 normal forwards;
+
+}
+.child3 {
+    display: flex;
+    flex-direction: row;
+    animation: ch3 3s ease-in 4s 1 normal forwards;
+}
+.para1, .img2, .para3 {
+    order: 1;
+    margin-left: 40px;
+}
+.img1, .para2, .img3 {
+    order: 2;
+    margin-right: 40px;
+}
+.para1, .para3 {
+    margin-right: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.para2 {
+    margin-left: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.head1 {
+    margin: 100px 0px 0px 120px;
+    font-size: 65px;
+    padding: 40px 0px 30x 0px;
+    /* text-shadow: 3px 3px 5px rgb(222, 109, 251); */
+    text-shadow: 4px 4px 5px rgb(231, 39, 39);
+}
+p {
+    /* font-size: 27px; */
+    font-size: 1.7em;
+    word-spacing: 3px;
+}
+.parent {
+    margin: 0px 150px;
+    border: 2px solid white;
+    padding: 20px;
+}
+.footer {
+    border: 2px solid black;
+    color: white;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 220px;
+    margin-top: 50px;
+    background-color: rgb(55, 54, 54);
+    
+}
+.footer-logo {
+    position: relative;
+    scale: 0.8;
+    border: solid black 2px;
+    padding: 10px;
+    margin-left: 8%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    background-color: rgb(239, 212, 72);
+
+    width: 160px;
+    margin: auto;
+    margin-top:30px;
+}
+.copyright {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.more {
+    text-align: center;
+    font-size: 20px;
+}
+.more > span {
+    font-weight: bolder;
+    font-size: 25px;
+    color: grey;
+}
+.share {
+    z-index: 1;
+    position: fixed;
+    top: 40%;
+}
+#share_tray nav li {
+    list-style-type: none;
+}
+#share_tray nav li img {
+    width: 50px;
+    scale: 0.9;
+    padding-top: 4px;
+    padding-left: 4px;
+    transition: scale 0.5s ;
+}
+#share_tray nav li img:hover {
+    scale: 1.0;
+}
+#share_tray {
+    visibility: hidden;
+}
+#greater {
+    /* background-color: rgba(255, 228, 196, 1); */
+    background-color: rgb(255, 179, 0);
+    color: black;
+    border: transparent;
+    font-size: 40px;
+    width: 20px;
+    overflow: hidden;
+    color: transparent;
+    margin: 0px;
+    transition: background-color 0.5s, width 0.5s;
+}
+#greater:hover {
+    background-color: rgba(244, 157, 50, 0.6);
+    color: black;
+    width: 60px;
+}
+.s {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    transition: width 0.3s linear;
+    /* margin: 5px; */
+    /* border-radius: 50%; */
+}
+.s:hover {
+    width: 170px;
+    /* border-radius: 30px; */
+}
+.social_share p {
+    width: 170px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+#s1 p {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100px;
+    background-color: rgb(4, 161, 4);
+    transition: background-color 0.5s;
+}
+#s1 p:hover {
+    background-color: rgb(4, 161, 4);
+}
+#s2 p {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100px;
+    background-color: rgba(224, 88, 4, 0.836);
+    transition: background-color 0.5s;
+}
+#s2 p:hover {
+    background-color: rgba(224, 88, 4, 0.836);
+}
+#s3 p {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100px;
+    background-color: rgba(1, 90, 244, 0.918);
+    transition: background-color 0.5s;
+}
+#s3 p:hover {
+    background-color: rgba(1, 90, 244, 0.918);
+}
+#s4 p {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100px;
+    background-color: rgba(7, 163, 225, 0.984);
+    transition: background-color 0.5s;
+}
+#s4 p:hover {
+    background-color: rgba(7, 163, 225, 0.984);
+}
+
+#s img {
+    order: 1;
+}
+#s p {
+    order: 2;
+    margin-left: 9px;
+}
+#whatsapp {
+    background-color: rgb(4, 161, 4);
+    color: black;
+}
+#insta {
+    background-color: rgba(224, 88, 4, 0.836);
+    color: white;
+}
+#fb {
+    background-color: rgba(1, 90, 244, 0.918);
+    color: white;
+}
+#twitter {
+    background-color: rgba(7, 163, 225, 0.984);
+    color: white;
+}
+#menu {
+    visibility: hidden;
+}
+
+@media screen and (max-width:500px){
+    #menu {
+        visibility: visible;
+        position: absolute;
+        right: 0px;
+        top: 12px;
+        padding-top: 3px;
+        margin-top: 8px;
+    }
+    #button1,#button2 {
+        visibility: hidden;
+    }
+    .head1 {
+        font-size: 40px;
+        margin-left: 55px;
+    }
+    .footer-logo {
+        scale: 0.6;
+        margin-top: 10px;
+    }
+    .footer {
+        margin-top: 25px;
+        height: 165px;
+    }
+    .copyright {
+        font-size: 15px;
+    }
+    .more {
+        font-size: 15px;
+    }
+    #logo {
+        scale: 0.7;
+    }
+    #wel-text {
+        margin-top: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        font-size: 35px;
+        width: 400px;
+        font-weight: lighter;
+        border-right: .1em solid orange;
+        animation : blink 0.75s infinite step-end,
+                    typing 2.7s steps(30,end) forwards;
+    }
+    @keyframes blink {
+        from , to {border-color: transparent;}
+        50% {border-color: rgb(250, 226, 47);}
+    }
+    @keyframes typing {
+        from {width : 0}
+        to {width : 335px}
+    }
+    #task {
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        margin-top: 1em;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .parent {
+        margin: 0px;
+        padding: 0px;
+    }
+    .para1,.para2,.para3 {
+        margin: 20px;
+        font-size: 3vw;
+    }
+    .img1, .img2, .img3 {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 30%;
+        height: 30%;
+    }
+    .img1:hover, 
+    .img2:hover, 
+    .img3:hover {
+        margin-bottom: auto;
+        height: 31%;
+        width: 31%;
+    }
+    .head1 {
+        font-size: 55px;
+    }
+    .copyright {
+        padding: 10px;
+    }
+    #button1, #button2 {
+        margin-top: 50px;
+    }
+    #wel-text {
+        margin-top: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        font-size: 35px;
+        width: 635px;
+        font-weight: lighter;
+        border-right: .1em solid orange;
+        animation : blink 0.75s infinite step-end,
+                    typing 2.7s steps(30,end) forwards;
+    }
+    @keyframes blink {
+        from , to {border-color: transparent;}
+        50% {border-color: rgb(250, 226, 47);}
+    }
+    @keyframes typing {
+        from {width : 0}
+        to {width : 635px}
+    }
+    #task {
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .parent {
+        margin: 5px;
+        padding: 5px;
+    }
+    .para1,.para2,.para3 {
+        margin: 20px;
+        font-size: 3vw;
+    }
+    .img1, .img2, .img3 {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 25%;
+        height: 25%;
+    }
+    .img2 {
+        height: 25%;
+        width: 25%;
+    }
+    .img1:hover, 
+    .img2:hover, 
+    .img3:hover {
+        margin-bottom: auto;
+        height: 31%;
+        width: 31%;
+    }
+}
