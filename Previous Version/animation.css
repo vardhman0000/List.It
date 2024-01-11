@@ -1,0 +1,127 @@
+.img1:hover,.img2:hover,.img3:hover {
+    height: 270px;
+}
+nav button:hover {
+    color: black;
+    background-color: white;
+    scale: 0.9
+}
+.logo:hover {
+    scale: 0.9;  
+    box-shadow: -5px 5px 4px white;
+
+}
+nav ul li a:hover {
+    color: black;
+}
+.li:hover {
+    color:black;
+}
+
+.para1 {
+    animation-name: para1;
+    animation-duration: 1s;
+    visibility: hidden;
+    animation-fill-mode: both;
+}
+@keyframes para1 {
+    0% {
+        transform: translateY(50%);
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0%);
+        visibility: visible;
+    }
+}
+.para2 {
+    animation-name: para2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: both;
+}
+@keyframes para2 {
+    0% {
+        transform: translateY(50%);
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0%);
+        visibility: visible;
+    }
+}
+.para3 {
+    animation-name: para3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: both;
+}
+@keyframes para3 {
+    0% {
+        transform: translateY(50%);
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0%);
+        visibility: visible;
+    }
+}
+
+.img1 {
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+@keyframes slideInUp {
+    0% {
+    transform: translateX(50%);
+    opacity: 0;
+    visibility: hidden;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    }
+}
+.img2 {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    visibility: hidden;
+    animation-delay: 0.5s;
+}
+@keyframes slideInLeft {
+    0% {
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    }
+}
+.img3 {
+    animation-name: slideInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    visibility: hidden;
+    animation-delay: 1s;
+}
+@keyframes slideInDown {
+    0% {
+    transform: translateX(50%);
+    opacity: 0;
+    visibility: hidden;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    }
+}

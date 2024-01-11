@@ -15,7 +15,7 @@ body {
     /* position: relative; */
 }
 #sec1 {
-    height: 800px;
+    height: 100vh;
     background-color: black;
 }
 
