@@ -23,7 +23,7 @@ function no_translate(){
 }
 logo.onclick=function(){
     nav.style.visibility='visible';
-    window.scrollTo(0, 750, {
+    window.scrollTo(0, 790, {
         behavior: "smooth"
       });
 }
