@@ -11,12 +11,15 @@ let logo = document.getElementById('logo');
 let nav = document.getElementById('navbar1');
 logo.onmouseover=shadow;
 function shadow(){
+    logo.style.transition = 'box-shadow 0.7s, border-radius 0.9s';
     logo.style.boxShadow='-10px 10px 6px white'
     logo.style.cursor='pointer'
+    logo.style.borderRadius='20px'
 }
 logo.onmouseleave=no_translate;
 function no_translate(){
     logo.style.boxShadow='none'
+    logo.style.borderRadius='0px'
 }
 logo.onclick=function(){
     nav.style.visibility='visible';
